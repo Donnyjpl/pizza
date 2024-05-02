@@ -3,12 +3,8 @@ from pizza import Pizza
 
 
 # a. Mostrar los valores de los atributos de clase de la clase importada sin crear una instancia de ella
-print("Valores de los atributos de clase de la clase Pizza:")
-print("Ingredientes Vegetales:", Pizza.ingredientes_vegetales)
-print("Ingredientes Proteicos:", Pizza.ingredientes_proteicos)
-print("Tipos de Masa:", Pizza.tipo_de_masa)
-print("Tipos de salsa:", Pizza.tipo_salsa)
-print()
+print(f"Todas las pizzas tienen un tamaño {Pizza.tamaño} "
+      f"y un valor de {Pizza.costo}")
 
 # b. Verificar si "salsa de tomate" está presente en la lista ["salsa de tomate", "salsa bbq"] utilizando el método del requerimiento 2
 print("¿La salsa de tomate está presente en la lista?")

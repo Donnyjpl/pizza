@@ -8,7 +8,7 @@ class Pizza:
     pizza_valida = False
 
     @staticmethod
-    def validate(opciones, eleccion):
+    def validate(opciones, eleccion: str):
         # Definir validación de eleccion
         if eleccion in opciones:
             return True
@@ -16,7 +16,7 @@ class Pizza:
             print(f"{eleccion} no está en {opciones}. Por favor realizar nuevamente el pedido")
             return False
     @staticmethod
-    def verificar_ingrediente(ingrediente, opciones):
+    def verificar_ingrediente(ingrediente:str, opciones):
         return ingrediente in opciones
     
     def realizar_pedido(self):
